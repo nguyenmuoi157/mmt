@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Dijsktra</title>
+<style>
+	canvas{ border: 1px solid #835455;
+	}	
+</style>
+<link rel="stylesheet" href="css/w3.css">
+<script src="js/sweet-alert.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/sweet-alert.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="js/canvas.js"></script>
+<script>
+
+</script>
+</head>
+
+<body>
+<div class="w3-col m9">
+<canvas id="mycanvas" width="1000" height="700"></canvas>
+	
+</div>
+<div class="w3-col m3 w3-card-4 w3-padding">
+<div class="w3-input">
+     <div>
+		<label class="w3-input">Nhập số hàng</label>
+		<input class="w3-input" type="text" name="sohang" placeholder="Số hàng..." id="sohang" value="35">
+    </div>
+	<div>
+		<label class="w3-input">Nhập số cột</label>
+		<input class="w3-input" type="text" name="socot" placeholder="Số cột..." id="socot" value="50">
+    </div>
+    <button class="w3-button w3-block w3-green" id="xacnhan">Xác nhận</button>
+</div>
+	
+  
+  
+  <form action="" id="option">
+  <div>
+  	<input class="w3-green" name="luachon" id="diemdau" value="diemdau" type="radio">
+  	<label>Chọn điểm đầu</label> 
+  </div>
+    <div>
+    <input class="w3-green" name="luachon" id="diemcuoi" value="diemcuoi" type="radio">
+   <label>Chọn điểm cuối</label> 	
+    </div>	
+    
+  <div>
+  	<input class="w3-green" name="luachon" id="vatcan" value="vatcan" type="radio">
+   <label>Vẽ vật cản</label>  
+  </div>
+  <div>
+  	<input class="w3-green" name="luachon" id="xoa" value="xoa" type="radio">
+   <label>Xoá vật cản</label>  
+  </div>
+	
+  	
+  </form>
+  <button class="w3-button w3-blue-gray w3-block" id="run">Tìm đường đi</button>
+<!--  <div id="toado"></div>-->
+  <div>
+  	<p><h2>Thông tin</h2></p>
+  	<p>bảng được tạo ra mặc định có 35 hàng và 50 cột để hiển thị tối ưu. Người dùng có thể nhập số hàng và số cột theo ý mình. Số hàng lớn hơn 5 và nhỏ hơn 35, số cột lớn hơn 5 và nhỏ hơn 50
+  	<ul>
+  		<li>Bước 1: nhập số hàng và số cột(nếu muốn) và nhấn xác nhận</li>
+  		<li>Bước 2: check chọn điểm đầu và chọn 1 ô trên bảng(ô này sẽ có màu đỏ)</li>
+  		<li>Bước 3: check chọn điểm cuối và chọn 1 ô trên bảng(ô này sẽ có màu xanh)</li>
+  		<li>Bước 4: vẽ vật cản nếu muốn, có thể xoá nếu chọn ô sai</li>
+  		<li>Bước 5: click "Tìm đường đi" và chương trình sẽ tìm đường đi ngắn nhất giữa 2 điểm</li>
+  	</ul></p>
+  </div>
+</div>
+
+</body>
+</html>
